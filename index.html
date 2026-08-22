@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ewewerban Interactive | Web & CSS Development Studio</title>
+    <title>Ewewerban Interactive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -196,6 +196,28 @@
             margin-bottom: 1.8rem;
         }
 
+        .author-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3rem;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .author-card h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
+
+        .author-card p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
         .btn {
             display: inline-block;
             background: var(--accent-color);
@@ -280,15 +302,15 @@
         </div>
         <nav>
             <a href="#projekty">Projekty</a>
-            <a href="#technologie">Technologie</a>
+            <a href="#o-autorze">O Autorze</a>
             <a href="https://github.com/Ewewerban" target="_blank">GitHub</a>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="badge">Web & Media Development Studio</div>
-        <h1>Innowacyjna infrastruktura sieciowa i projektowanie stron.</h1>
-        <p>Ewewerban Interactive to niezależny podmiot ukierunkowany na tworzenie zaawansowanych systemów webowych, obsługę własnych serwerów oraz nowoczesny web design.</p>
+        <div class="badge">Web & HTML Development Studio</div>
+        <h1>Innowacyjna infrastruktura sieciowa i tworzenie stron.</h1>
+        <p>Ewewerban Interactive to niezależny podmiot ukierunkowany na tworzenie zaawansowanych systemów webowych, obsługę własnych serwerów oraz czysty kod HTML.</p>
         <div class="hero-actions">
             <a href="#projekty" class="btn">Zobacz projekty</a>
             <a href="https://github.com/Ewewerban" target="_blank" class="btn btn-secondary">Profil GitHub</a>
@@ -305,7 +327,7 @@
             <div class="stat-label">Filozofia rozwoju</div>
         </div>
         <div class="stat-item">
-            <div class="stat-number">Web & CSS</div>
+            <div class="stat-number">Web & HTML</div>
             <div class="stat-label">Główny profil</div>
         </div>
     </div>
@@ -327,13 +349,11 @@
 
             <div class="card">
                 <div>
-                    <h3>Strony Internetowe w CSS</h3>
-                    <p>Projektowanie i wdrażanie autorskich witryn internetowych. Skupiamy się na responsywności, estetyce UI/UX i czystym kodzie CSS.</p>
+                    <h3>Strony Internetowe w HTML</h3>
+                    <p>Projektowanie i wdrażanie autorskich witryn internetowych. Skupiamy się na semantyce, strukturyzacji danych oraz czystym kodzie HTML.</p>
                     <div class="tech-tags">
                         <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">Responsive Web Design</span>
-                        <span class="tag">UI/UX</span>
+                        <span class="tag">Semantic HTML</span>
                     </div>
                 </div>
                 <a href="https://github.com/Ewewerban" target="_blank" class="btn btn-secondary" style="margin-top: 1.5rem;">Śledź na GitHubie</a>
@@ -342,17 +362,13 @@
         </div>
     </section>
 
-    <section class="section" id="technologie">
-        <h2 class="section-title">Stos Technologiczny</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Infrastruktura i Web</h3>
-                <p>Zarządzanie serwerami, systemami CMS oraz automatyzacją szyfrowania połączeń.</p>
-            </div>
-            <div class="card">
-                <h3>Frontend & CSS Design</h3>
-                <p>Tworzenie nowoczesnych układów stron (Flexbox, CSS Grid), animacji oraz nowoczesnych interfejsów użytkownika.</p>
-            </div>
+    <section class="section" id="o-autorze">
+        <h2 class="section-title">O Autorze</h2>
+        <div class="author-card">
+            <h3>Ewewerban</h3>
+            <p>
+                Założyciel i główny deweloper marki <strong>Ewewerban Interactive</strong>. Zajmuję się kompleksowym tworzeniem infrastruktury sieciowej, opartym na czystym kodzie budowaniem stron WWW oraz wdrażaniem i administracją niezależnymi systemami CMS, takimi jak HarcWiki. Wszystkie projekty rozwijam w oparciu o ideę Open Source, niezależność technologiczną i dbałość o każdy detal wykonania.
+            </p>
         </div>
     </section>
 
