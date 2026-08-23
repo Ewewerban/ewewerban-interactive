@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ewewerban Interactive</title>
+    <title>Ewewerban Interactive | Web & HTML Development Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -205,6 +205,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .author-card h3 {
@@ -216,6 +217,27 @@
             color: var(--text-muted);
             font-size: 1.05rem;
             line-height: 1.8;
+        }
+
+        .privacy-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px stroke var(--border-color);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-top: 1rem;
+        }
+
+        .privacy-box h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .privacy-box p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
         }
 
         .btn {
@@ -271,7 +293,7 @@
             justify-content: space-between;
             align-items: center;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-top: auto;
             background: rgba(11, 13, 18, 0.9);
         }
@@ -283,6 +305,12 @@
 
         footer a:hover {
             color: var(--accent-color);
+        }
+
+        .legal-notice {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #6b7280;
         }
 
         @media (max-width: 768px) {
@@ -303,6 +331,7 @@
         <nav>
             <a href="#projekty">Projekty</a>
             <a href="#o-autorze">O Autorze</a>
+            <a href="#prywatnosc">Prywatność</a>
             <a href="https://github.com/Ewewerban" target="_blank">GitHub</a>
         </nav>
     </header>
@@ -339,9 +368,10 @@
             <div class="card">
                 <div>
                     <h3>HarcWiki</h3>
-                    <p>Wolna Encyklopedia Harcerska. Nowoczesna, niezależna platforma wiedzy oparta na silniku MediaWiki.</p>
+                    <p>Wolna Encyklopedia Harcerska. Nowoczesna, niezależna platforma wiedzy oparta na silniku MediaWiki, udostępniana społecznie na wolnych licencjach.</p>
                     <div class="tech-tags">
                         <span class="tag">MediaWiki</span>
+                        <span class="tag">CC BY-SA</span>
                     </div>
                 </div>
                 <a href="https://harcwiki.sowa.eu.org" target="_blank" class="btn" style="margin-top: 1.5rem;">Odwiedź serwis</a>
@@ -363,17 +393,39 @@
     </section>
 
     <section class="section" id="o-autorze">
-        <h2 class="section-title">O Autorze</h2>
+        <h2 class="section-title">O Autorze i Statusie Projektu</h2>
         <div class="author-card">
             <h3>Ewewerban</h3>
             <p>
                 Założyciel i główny deweloper marki <strong>Ewewerban Interactive</strong>. Zajmuję się kompleksowym tworzeniem infrastruktury sieciowej, opartym na czystym kodzie budowaniem stron WWW oraz wdrażaniem i administracją niezależnymi systemami CMS, takimi jak HarcWiki. Wszystkie projekty rozwijam w oparciu o ideę Open Source, niezależność technologiczną i dbałość o każdy detal wykonania.
             </p>
+            <p style="font-size: 0.95rem; color: #9ca3af; border-top: 1px solid var(--border-color); padding-top: 1rem; margin-top: 0.5rem;">
+                📌 <strong>Status Prawny:</strong> <em>Ewewerban Interactive</em> jest niekomercyjnym, prywatnym projektem hobbystycznym i autorskim szyldem programistycznym (nie stanowi zarejestrowanej działalności gospodarczej). Wszystkie udostępniane serwisy są wolne od opłat i tworzone społecznie.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="prywatnosc">
+        <h2 class="section-title">Polityka Prywatności i RODO</h2>
+        <div class="privacy-box">
+            <h4>1. Administrator Danych</h4>
+            <p>Administratorem serwerów i serwisów prowadzonych pod szyldem Ewewerban Interactive jest autorka/autor działający pod pseudonimem <strong>Ewewerban</strong>.</p>
+        </div>
+        <div class="privacy-box">
+            <h4>2. Logi Serwera</h4>
+            <p>Podczas korzystania ze stron serwer proxy (Nginx) automatycznie przetwarza podstawowe dane techniczne (takie jak adres IP, typ przeglądarki, data i godzina zapytania) wyłącznie w celach zapewnienia bezpieczeństwa, stabilności serwera oraz ochrony przed atakami (np. DDoS).</p>
+        </div>
+        <div class="privacy-box">
+            <h4>3. Analityka i Pliki Cookies</h4>
+            <p>Szanujemy prywatność użytkowników. Nasze serwisy korzystają z analityki typu Open Source (Umami), która nie wykorzystuje śledzących plików cookies (cookie-less analytics) i nie przekazuje danych podmiotom trzecim.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Ewewerban Interactive. Wszelkie prawa zastrzeżone.</p>
+        <div>
+            <p>&copy; 2026 Ewewerban Interactive. Wszelkie prawa zastrzeżone.</p>
+            <p class="legal-notice">Prywatny projekt hobbystyczny Open Source. Tworzony przez Ewewerban.</p>
+        </div>
         <div>
             Kod źródłowy i projekty: <a href="https://github.com/Ewewerban" target="_blank">github.com/Ewewerban</a>
         </div>
